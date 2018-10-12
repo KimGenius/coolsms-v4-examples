@@ -50,7 +50,7 @@ class APIInit {
                     .addInterceptor(interceptor)
                     .build();
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://rest.coolsms.co.kr/")
+                    .baseUrl("http://localhost:7001/")
                     .addConverterFactory(ScalarsConverterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
